@@ -58,6 +58,11 @@ namespace Medical_Store
 
         private void btn_update_medicine_Click(object sender, EventArgs e)
         {
+            if (combobox_medicine.SelectedIndex == -1 || txt_name.Text == "" || txt_price.Text == "" || txt_quantity.Text == "")
+            {
+                MessageBox.Show("Please fill in all the fields.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             try
             {
                 using (OracleConnection con = new OracleConnection(ConnectionString))
@@ -75,7 +80,7 @@ namespace Medical_Store
                         cmd.Parameters.Add("expiry_date", OracleDbType.Date).Value = expiry_date.Value;
                         cmd.Parameters.Add("old_name", OracleDbType.Varchar2).Value = old_name;
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Medicine updated successfully...!");
+                        MessageBox.Show("Medicine updated successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txt_name.Text = "";
                         txt_price.Text = "";
                         txt_quantity.Text = "";

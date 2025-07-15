@@ -30,6 +30,7 @@ namespace Medical_Store
         {
             try
             {
+                combobox_medicine.Items.Clear();
                 string query = "Select Medicine_Name from Medicine";
                 using (OracleConnection con = new OracleConnection(ConnectionString))
                 {
@@ -56,7 +57,7 @@ namespace Medical_Store
         {
             if (combobox_medicine.SelectedItem == null)
             {
-                MessageBox.Show("Please select the medicine");
+                MessageBox.Show("Please select the medicine", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             string Med_Name = combobox_medicine.SelectedItem.ToString();
@@ -70,8 +71,9 @@ namespace Medical_Store
                     {
                         cmd.Parameters.Add("Med_Name", Med_Name);
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Medicine deleted successfully...!");
+                        MessageBox.Show("Medicine deleted successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         combobox_medicine.SelectedItem = null;
+                        LoadMedicines();
                     }
                 }
             }

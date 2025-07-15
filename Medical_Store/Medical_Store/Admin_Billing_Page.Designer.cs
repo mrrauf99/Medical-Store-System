@@ -45,7 +45,7 @@
             // lbl_welcome
             // 
             this.lbl_welcome.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lbl_welcome.Location = new System.Drawing.Point(79, 50);
+            this.lbl_welcome.Location = new System.Drawing.Point(59, 50);
             this.lbl_welcome.Name = "lbl_welcome";
             this.lbl_welcome.Size = new System.Drawing.Size(482, 64);
             this.lbl_welcome.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.lbl_select_medicine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_select_medicine.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_select_medicine.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_select_medicine.Location = new System.Drawing.Point(88, 171);
+            this.lbl_select_medicine.Location = new System.Drawing.Point(68, 171);
             this.lbl_select_medicine.Name = "lbl_select_medicine";
             this.lbl_select_medicine.Size = new System.Drawing.Size(195, 32);
             this.lbl_select_medicine.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.lbl_quantitty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_quantitty.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_quantitty.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_quantitty.Location = new System.Drawing.Point(88, 237);
+            this.lbl_quantitty.Location = new System.Drawing.Point(68, 237);
             this.lbl_quantitty.Name = "lbl_quantitty";
             this.lbl_quantitty.Size = new System.Drawing.Size(195, 31);
             this.lbl_quantitty.TabIndex = 0;
@@ -81,7 +81,7 @@
             // txt_quantity
             // 
             this.txt_quantity.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_quantity.Location = new System.Drawing.Point(350, 234);
+            this.txt_quantity.Location = new System.Drawing.Point(330, 234);
             this.txt_quantity.Name = "txt_quantity";
             this.txt_quantity.Size = new System.Drawing.Size(178, 34);
             this.txt_quantity.TabIndex = 2;
@@ -90,7 +90,7 @@
             // combobox_medicine
             // 
             this.combobox_medicine.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combobox_medicine.Location = new System.Drawing.Point(350, 169);
+            this.combobox_medicine.Location = new System.Drawing.Point(330, 169);
             this.combobox_medicine.Name = "combobox_medicine";
             this.combobox_medicine.Size = new System.Drawing.Size(178, 36);
             this.combobox_medicine.TabIndex = 1;
@@ -99,7 +99,7 @@
             // btn_bill
             // 
             this.btn_bill.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bill.Location = new System.Drawing.Point(648, 426);
+            this.btn_bill.Location = new System.Drawing.Point(628, 426);
             this.btn_bill.Name = "btn_bill";
             this.btn_bill.Size = new System.Drawing.Size(156, 44);
             this.btn_bill.TabIndex = 5;
@@ -110,7 +110,7 @@
             // btn_enter
             // 
             this.btn_enter.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_enter.Location = new System.Drawing.Point(266, 424);
+            this.btn_enter.Location = new System.Drawing.Point(246, 424);
             this.btn_enter.Name = "btn_enter";
             this.btn_enter.Size = new System.Drawing.Size(99, 46);
             this.btn_enter.TabIndex = 4;
@@ -121,7 +121,7 @@
             // btn_clearbill
             // 
             this.btn_clearbill.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clearbill.Location = new System.Drawing.Point(1121, 423);
+            this.btn_clearbill.Location = new System.Drawing.Point(1101, 423);
             this.btn_clearbill.Name = "btn_clearbill";
             this.btn_clearbill.Size = new System.Drawing.Size(136, 44);
             this.btn_clearbill.TabIndex = 6;
@@ -145,7 +145,7 @@
             this.txt_bill_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_bill_box.Enabled = false;
             this.txt_bill_box.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_bill_box.Location = new System.Drawing.Point(648, 50);
+            this.txt_bill_box.Location = new System.Drawing.Point(628, 50);
             this.txt_bill_box.Multiline = true;
             this.txt_bill_box.Name = "txt_bill_box";
             this.txt_bill_box.Size = new System.Drawing.Size(609, 350);
@@ -158,7 +158,7 @@
             this.lbl_customer_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_customer_id.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_customer_id.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_customer_id.Location = new System.Drawing.Point(88, 303);
+            this.lbl_customer_id.Location = new System.Drawing.Point(68, 303);
             this.lbl_customer_id.Name = "lbl_customer_id";
             this.lbl_customer_id.Size = new System.Drawing.Size(195, 31);
             this.lbl_customer_id.TabIndex = 0;
@@ -168,7 +168,7 @@
             // txt_customer_id
             // 
             this.txt_customer_id.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_customer_id.Location = new System.Drawing.Point(350, 303);
+            this.txt_customer_id.Location = new System.Drawing.Point(330, 303);
             this.txt_customer_id.Name = "txt_customer_id";
             this.txt_customer_id.Size = new System.Drawing.Size(178, 34);
             this.txt_customer_id.TabIndex = 3;
@@ -178,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1331, 638);
+            this.ClientSize = new System.Drawing.Size(1305, 638);
             this.Controls.Add(this.txt_bill_box);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_clearbill);

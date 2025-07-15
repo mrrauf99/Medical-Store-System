@@ -41,14 +41,12 @@ namespace Medical_Store
             string Country = combo_country.SelectedItem.ToString();
             if (FirstName == "" || LastName == "" || Username == "" || Pass == "" || Email == "")
             {
-                {
-                    MessageBox.Show("Please fill in all the fields.");
-                    return;
-                }
+                MessageBox.Show("Please fill in all the fields.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             else if (img == null)
             {
-                MessageBox.Show("Please insert the image");
+                MessageBox.Show("Please insert the image", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             try
@@ -72,12 +70,12 @@ namespace Medical_Store
                             cmd.ExecuteNonQuery();
                         }
 
-                        MessageBox.Show("Sign Up Successfully...!");
+                        MessageBox.Show("Sign Up Successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Username already exists...!");
+                        MessageBox.Show("Username already exists...!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -168,6 +166,11 @@ namespace Medical_Store
         private void lbl_pic_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_back_login_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

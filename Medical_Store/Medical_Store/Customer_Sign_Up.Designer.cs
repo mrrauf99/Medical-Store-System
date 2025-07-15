@@ -588,6 +588,7 @@
             this.btn_back_login.TabIndex = 9;
             this.btn_back_login.Text = "<---- Back to Login";
             this.btn_back_login.UseVisualStyleBackColor = true;
+            this.btn_back_login.Click += new System.EventHandler(this.btn_back_login_Click);
             // 
             // lbl_pic
             // 

@@ -41,7 +41,7 @@ namespace Medical_Store
         {
             if (txt_name.Text == "" || txt_price.Text == "" || txt_quantity.Text == "")
             {
-                MessageBox.Show("Please fill all the fields...!", "Information");
+                MessageBox.Show("Please fill all the fields...!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             try
@@ -60,7 +60,7 @@ namespace Medical_Store
                         cmd.Parameters.Add("quantity", OracleDbType.Int32).Value = Convert.ToInt32(txt_quantity.Text); //  Direct passing value
                         cmd.Parameters.Add("expiry_date", OracleDbType.Date).Value = expiry_date.Value;
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Medicine added successfully...!");
+                        MessageBox.Show("Medicine added successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txt_name.Text = "";
                         txt_price.Text = "";
                         txt_quantity.Text = "";

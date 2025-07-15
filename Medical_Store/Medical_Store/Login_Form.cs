@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 namespace Medical_Store
 {
     public partial class Login_Form : Form
@@ -76,6 +77,11 @@ namespace Medical_Store
 
         private void btn_login_Click_1(object sender, EventArgs e)
         {
+            if (txt_username.Text == "" || txt_pass.Text == "")
+            {
+                MessageBox.Show("Please fill in all the fields.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             bool isFound = CheckAdminLogin();
             if (!isFound)
             {
@@ -103,7 +109,7 @@ namespace Medical_Store
                         // It can also retrieve a single value from query
                         if (UserCount > 0)
                         {
-                            MessageBox.Show("Login Successfully...!");
+                            MessageBox.Show("Login Successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             txt_pass.Text = "";
                             txt_username.Text = "";
                             this.Hide();
@@ -142,7 +148,7 @@ namespace Medical_Store
                         // It can also retrieve a single value from query
                         if (UserCount > 0)
                         {
-                            MessageBox.Show("Login Successfully...!");
+                            MessageBox.Show("Login Successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
                             Customer_Dashboard customer_Dashboard = new Customer_Dashboard(txt_username.Text);
                             customer_Dashboard.ShowDialog();
@@ -152,7 +158,7 @@ namespace Medical_Store
                         }
                         else
                         {
-                            MessageBox.Show("Invalid username/password...!");
+                            MessageBox.Show("Invalid username/password...!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }

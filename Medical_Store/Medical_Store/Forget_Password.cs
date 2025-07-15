@@ -25,7 +25,7 @@ namespace Medical_Store
         {
             if (txt_email.Text == "" || txt_pass.Text == "")
             {
-                MessageBox.Show("Please fill all the fields", "Information");
+                MessageBox.Show("Please fill all the fields", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -106,7 +106,7 @@ namespace Medical_Store
                         }
                         else
                         {
-                            MessageBox.Show("Invalid Email...!", "Information");
+                            MessageBox.Show("Invalid Email...!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             txt_email.Text = "";
                             txt_pass.Text = "";
                         }

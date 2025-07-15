@@ -31,18 +31,18 @@ namespace Medical_Store
                 if (txt_firstname.Text == "" || txt_lastname.Text == "" || txt_username.Text == "" || txt_pass.Text == "" || txt_email.Text == "")
                 {
                     {
-                        MessageBox.Show("Please fill in all the fields...!", "Information");
+                        MessageBox.Show("Please fill in all the fields...!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                 }
                 else if (combo_country.SelectedItem == null)
                 {
-                    MessageBox.Show("Please select the country...!", "Information");
+                    MessageBox.Show("Please select the country...!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else if (img == null)
                 {
-                    MessageBox.Show("Please insert the image...!", "Information");
+                    MessageBox.Show("Please insert the image...!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 try
@@ -66,7 +66,7 @@ namespace Medical_Store
                                 cmd.Parameters.Add("image", OracleType.Blob).Value = img;
                                 cmd.Parameters.Add("OldUsername", OracleType.VarChar).Value = Username;
                                 cmd.ExecuteNonQuery();
-                                MessageBox.Show("Profile updated Successfully...!");
+                                MessageBox.Show("Profile updated Successfully...!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 Customer_Dashboard.SetUsername(txt_username.Text);
                                 Username = txt_username.Text;
                                 LoadProfileDetails(txt_username.Text);
