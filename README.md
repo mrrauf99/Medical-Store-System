@@ -26,35 +26,35 @@ Customer Login 👩‍💻
 
 🚀 Technologies Used
 -
-C# Windows Forms for user interface and application logic
+● C# Windows Forms for user interface and application logic
 
-Oracle Database for robust and secure data management
+● Oracle Database for robust and secure data management
 
 🎯 Key Functionalities
 -
-Secure multi-role login system (Admin & Customer)
+● Secure multi-role login system (Admin & Customer)
 
-Medicine inventory management with add, update, delete features
+● Medicine inventory management with add, update, delete features
 
-Billing system integrated with inventory
+● Billing system integrated with inventory
 
-User-friendly profile management for customers
+● User-friendly profile management for customers
 
-Transaction history tracking for customers
+● Transaction history tracking for customers
 
-Password recovery and new user registration forms
+● Password recovery and new user registration forms
 
 🛠️ How to Run
 -
-Set up the Oracle Database with the provided schema.
+● Set up the Oracle Database with the provided schema.
 
-Open the project in Visual Studio.
+● Open the project in Visual Studio.
 
-Configure the database connection string in the app settings.
+● Configure the database connection string in the app settings.
 
-Build and run the application.
+● Build and run the application.
 
-Use Admin or Customer credentials to log in or sign up.
+● Use Admin or Customer credentials to log in or sign up.
 
 ❤️ Thank You!
 -
