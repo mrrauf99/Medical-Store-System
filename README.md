@@ -56,5 +56,7 @@ Build and run the application.
 
 Use Admin or Customer credentials to log in or sign up.
 
-🙏 Thank you for checking out the Medical Store System. Stay healthy and organized! 💙💊
+❤️ Thank You!
 -
+Thanks for checking out the Medical Store System. Stay healthy and organized! 💙💊
+
